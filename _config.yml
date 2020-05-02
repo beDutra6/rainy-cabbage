@@ -1,0 +1,81 @@
+title: Stackbit Fjord Theme
+baseurl: /
+permalink: '/:title/'
+description: A minimal blogging theme for Stackbit
+palette: yellow
+header:
+  title: Fjord
+  tagline: Minimal and clean blog theme
+  logo_img: images/logo.png
+  background_img: images/header-bg.jpg
+  has_nav: true
+  nav_links:
+    - label: Home
+      url: /
+      type: link
+    - label: About
+      url: /about/
+      type: link
+    - label: Style Guide
+      url: /style-guide/
+      type: link
+    - label: Contact
+      url: /contact/
+      type: link
+  has_social: true
+  social_links:
+    - label: Twitter
+      url: 'https://twitter.com/'
+      type: icon
+      icon_class: fa-twitter
+      new_window: true
+    - label: Instagram
+      url: 'https://www.instagram.com/'
+      type: icon
+      icon_class: fa-instagram
+      new_window: true
+    - label: GitHub
+      url: 'https://github.com/'
+      type: icon
+      icon_class: fa-github
+      new_window: true
+    - label: LinkedIn
+      url: 'https://www.linkedin.com/'
+      type: icon
+      icon_class: fa-linkedin
+      new_window: true
+    - label: DEV
+      url: 'https://dev.to/'
+      type: icon
+      icon_class: fa-dev
+      new_window: true
+footer:
+  content: '&copy; All rights reserved.'
+  links:
+    - label: Made with Stackbit.
+      url: 'https://www.stackbit.com'
+      type: link
+      new_window: true
+sass:
+  indentWidth: 4
+  style: nested
+  precision: 10
+plugins:
+  - jekyll-menus
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - ssg-build.sh
+  - LICENSE.md
+  - README.md
+  - netlify.toml
+  - stackbit-build.sh
+  - stackbit-pull.js
+collections:
+  posts:
+    permalink: '/posts/:title/'
